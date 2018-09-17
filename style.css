@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'DIN OT', Calibri, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container {
+  color: #0e0e0e;
+  margin: 1em auto;
+  max-width: 500px;
+}
+.title {
+  font-size: 42px;
+  font-family: 'Newzald', Georgia, sans-serif;
+  font-weight: 400;
+}
+.input {
+  display: block;
+  font-family: 'DIN OT', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  width: 100%;
+}
+.todos {
+  margin-top: 1em 0;
+  padding: 0;
+}
+
+.todo {
+  background: 0;
+  border: 0;
+  border-radius: 0;
+  display: block;
+  font-family: 'DIN OT', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  padding: 1em;
+  position: relative;
+  transition: all 0.1s ease-out;
+  width: 100%;
+}
+
+.todo:hover,
+.todo:focus {
+  background: #eee;
+  outline: none;
+}
+
+.todo.done {
+  text-decoration: line-through;
+}
+
+.delete {
+  appearance: none;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+}
+
+.todo:hover .delete,
+.todo:focus .delete {
+  display: block;
+}
+
+.no-todos {
+  text-align: center;
+}
